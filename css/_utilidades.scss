@@ -1,0 +1,18 @@
+/*utilidades*/
+@mixin ScreenSize {
+     @media (min-width: 768px) {
+          @content;
+     }
+}
+
+@mixin no-margin {
+     margin: 0;
+}
+
+@mixin no-padding {
+     padding: 0;
+}
+
+@mixin centrar-texto {
+     text-align: center;
+}

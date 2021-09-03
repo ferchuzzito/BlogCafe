@@ -1,0 +1,30 @@
+/*Lateral*/
+.cursos {
+     @include no-padding;
+     list-style-type: none;
+}
+
+.widget-curso {
+     border-bottom: 1px solid $Cgris;
+     margin-bottom: 2rem;
+
+     &:last-of-type {
+          border-bottom: none;
+          margin-bottom: 0;
+     }
+
+     h4 {
+          @include no-margin
+     }
+
+     &__label {
+          font-family: $OpenSans;
+          font-weight: 700;
+          font-size: 2rem;
+     }
+
+     &__info {
+          font-weight: 400;
+          font-size: 2rem;
+     }
+}

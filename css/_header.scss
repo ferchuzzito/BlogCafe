@@ -1,0 +1,64 @@
+/*header*/
+.header {
+     background-image: url(../img/banner.jpg);
+     height: 60rem;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+
+.header__texto {
+     text-align: center;
+     color: $Cblanco;
+     margin-top: 5rem;
+
+     @include ScreenSize {
+          margin-top: 15rem;
+     }
+
+     h2 {
+          @include no-margin
+     }
+
+     p {
+          @include no-margin
+     }
+}
+
+.barra {
+     padding-top: 4rem;
+     @include ScreenSize {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+}
+
+.logo {
+     color: $Cblanco;
+
+     &__nombre {
+          font-weight: 400;
+          @include no-margin;
+          @include centrar-texto;
+     }
+
+     &__bold {
+          font-weight: 700;
+     }
+}
+
+.navegacion {
+     @include ScreenSize {
+          display: flex;
+          /*gap: 2rem;*/
+     }
+
+     &__enlace {
+          display: block;
+          text-align: center;
+          font-size: 1.8rem;
+          color: $Cblanco;
+          margin: 0 1rem;
+     }
+}
